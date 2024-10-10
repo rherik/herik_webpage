@@ -13,7 +13,7 @@
 
 &#9744; Slider cards na aba Catálogo
 
-&#9744; Comprar domínio no google
+&#9744; Comprar domínio
 
 &#9744; Ajeitar tamanho na homepage
 

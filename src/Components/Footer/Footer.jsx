@@ -2,20 +2,19 @@ import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
 import { MdEmail } from "react-icons/md";
 
-const Footer = () => {
+export default function Footer () {
     return (
         <>
-        {/* Colocar redes sociais e ícones
-        endereço com google maps: https://www.google.com/maps/place/R.+Pedro+Gomes,+21+-+Realengo,+Rio+de+Janeiro+-+RJ,+21715-050/data=!4m2!3m1!1s0x9bdf65038b255b:0x205671290844094f?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjEzNy4xMDMYACCenQoqYyw5NDIyNjk2OSw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIzMTE3NCw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICQlI%3D */}
-        <div className='bg-white text-gray-400 relative w-86 grid pt-3 p-2 inset-x-0 bottom-0 border-double border-2 shadow-md
+        <div className='bg-white dark:bg-gray-900 text-gray-400 relative md:static w-86 grid p-2 
+            inset-x-0 bottom-0 border-double border-2 shadow-md
             md:flex flex-col md:justify-between md:w-full'>
             
-            <p className='font-bold w-fit'>Rua Pedro Gomes, 21. Realengo. Rio de janeiro/RJ</p>
+            <p className='font-bold w-fit'>Rio de janeiro/RJ</p>
                 <div className='flex flex-row justify-start w-fit space-x-1'>
                     <div className='flex flex-row'>
-                        <a href="mailto:dalvacamposestetica@gmail.com" target='_blank' className='hover:text-white cursor-pointer'>
+                        <a href="mailto:herikrosa@hotmail.com" target='_blank' className='hover:text-white cursor-pointer'>
                             <MdEmail className='mt-1 text-xl hover:text-[#cba042]' /></a>
-                        <p>dalvacamposestetica@gmail.com</p>
+                        <p>herikrosa@hotmail.com</p>
                     </div>
                     <div className='w-fit text-[22px] hover:text-[#cba042] cursor-pointer'>
                         <a href='https://www.instagram.com/studio.dalvacampos?igsh=ZDl4cDV1Z3BoenYw' target='_blank'>
@@ -45,4 +44,3 @@ const Footer = () => {
         </>
     )
 }
-export default Footer

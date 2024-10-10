@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Aimagem from '../../assets/dc_logo.png'
+import Aimagem from '../../assets/yo.png'
 
 
 function Index() {
@@ -18,9 +18,9 @@ function Index() {
   };
 
   return (
-    <main className='flex flex-row justify-around bg-white static p-2'>
-      <div className='h-[880px] w-[479px] left-2'>
-          <img src={Aimagem} alt="" />
+    <main className='flex flex-row justify-around static p-2 min-h-64 md:min-h-80'>
+      <div className='w-80 left-2'>
+          <img src={Aimagem} alt="" className='rounded-lg' />
       </div>
 
       {/* <aside className='w-96 static right-2 py-4'>
