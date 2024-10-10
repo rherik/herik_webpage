@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Aimagem from '../../assets/dc_logo.png'
 
 
-function Index() {
+export default function Homepage() {
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
@@ -18,9 +18,9 @@ function Index() {
   };
 
   return (
-    <main className='flex flex-row justify-around bg-white static p-2'>
-      <div className='h-[880px] w-[479px] left-2'>
-          <img src={Aimagem} alt="" />
+    <main className='flex flex-row justify-around bg-white static p-2 w-full'>
+      <div className='left-2'>
+          <img src={Aimagem} alt="" className='w-[400px]' />
       </div>
 
       {/* <aside className='w-96 static right-2 py-4'>
@@ -74,5 +74,3 @@ function Index() {
     </main>
   )
 }
-
-export default Index

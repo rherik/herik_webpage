@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
-import Index from './Components/Index/Index'
+import Homepage from './Components/Homepage/Homepage'
 
 const App = () => {
   return (
     <>
     <div className='h-screen pt-14 space-y-20 bg-white'>
       <Navbar />
-      <Index />
+      <Homepage />
       <Footer />
     </div>
     </>

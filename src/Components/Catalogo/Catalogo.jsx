@@ -7,36 +7,27 @@ import spa_pes from '../../assets/serv/spa_pes.jpeg'
 import massagem from '../../assets/serv/massagem.jpeg'
 import micro_agulha from '../../assets/serv/micro_agulha.jpeg'
 
-function Catalogo() {
+export default function Catalogo() {
+    let links = [
+        {img: cera},
+        {img: hidraglos},
+        {img: drenagem},
+        {img: limp_pele},
+        {img: remo_sinais},
+        {img: spa_pes},
+        {img: massagem},
+        {img: micro_agulha}
+    ]
 
-  return (
-    <section className='grid grid-cols-2 justify-center static p-2 pl-2'>
-      <div className='h-[880px] w-[479px] shadow-xl pt-2'>
-          <img src={cera} alt="" />
-      </div>
-      <div className='h-[880px] w-[479px] shadow-xl pt-2'>
-          <img src={hidraglos} alt="" />
-      </div>
-      <div className='h-[880px] w-[479px] shadow-xl pt-2'>
-          <img src={drenagem} alt="" />
-      </div>
-      <div className='h-[880px] w-[479px] shadow-xl pt-2'>
-          <img src={limp_pele} alt="" />
-      </div>
-      <div className='h-[880px] w-[479px] shadow-xl pt-2'>
-          <img src={remo_sinais} alt="" />
-      </div>
-      <div className='h-[880px] w-[479px] shadow-xl pt-2'>
-          <img src={spa_pes} alt="" />
-      </div>
-      <div className='h-[880px] w-[479px] shadow-xl pt-2'>
-          <img src={massagem} alt="" />
-      </div>
-      <div className='h-[880px] w-[479px] shadow-xl pt-2'>
-          <img src={micro_agulha} alt="" />
-      </div>
-    </section>
+    return (
+        <section className='grid grid-cols-3 justify-center static p-2 pl-2 mt-8'>
+            {
+                links.map((link)=>(
+                    <div className='shadow-xl pt-2'>
+                        <img src={link.img} alt="" className='h-[525px] w-[275px]' />
+                    </div>
+                ))
+            }
+        </section>
   )
 }
-
-export default Catalogo
