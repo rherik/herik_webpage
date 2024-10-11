@@ -33,7 +33,7 @@ export default function Toggle () {
                     <motion.span
                     layout
                     transition={{ type: "spring", damping: 15, stiffness: 250 }}
-                    className="h-full w-6 rounded-full bg-gradient-to-r from-gray-500 to-gray-950"/>
+                    className="h-full w-6 rounded-full bg-gradient-to-r from-gray-500 to-[#f2f0eabd]"/>
                 </div>
             </div>
         </div>

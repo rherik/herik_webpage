@@ -6,7 +6,7 @@ import Catalogo from './Components/Catalogo/Catalogo'
 const App = () => {
   return (
     <>
-    <div className='h-screen pt-14 bg-white dark:bg-gray-900'>
+    <div className='h-screen pt-14 bg-[#F2F0EA] dark:bg-gray-900'>
       <Navbar />
       <Catalogo />
       <Footer />

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Aimagem from '../../assets/yo.png'
+import AnImagem from '../../assets/yo.png'
 
 
-function Index() {
+export default function Homepage() {
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
@@ -18,11 +18,22 @@ function Index() {
   };
 
   return (
-    <main className='flex flex-row justify-around static p-2 min-h-64 md:min-h-80'>
-      <div className='w-80 left-2'>
-          <img src={Aimagem} alt="" className='rounded-lg' />
-      </div>
+    <main className='flex flex-col-1 justify-center items-center static p-2 min-h-64 md:min-h-96'>
+      <div className=''>
+          <img src={AnImagem} alt="" className='w-80 left-2 rounded-lg' />
+        <h5 className='font-semibold first-letter:text-7xl first-letter:font-bold first-letter:text-[#3b3a274f] first-letter:mr-3 pt-2'>
+          Formado em Análise e Desenvolvimento de Sistemas <br /> pela Estácio de Sá 
+          tenho especialidade com <br /> 
+        </h5>
+        <p className='text-purple-900'>
+            Python(Flask, Django, Selenium), Banco de dados PostgreSQL e JavaScript(React).
+        </p>
 
+        <h5 className='font-semibold first-letter:text-7xl first-letter:font-bold first-letter:text-[#3b3a274f] first-letter:mr-3 pt-2'>
+          Além de Docker e arquitetura RestAPI. <br /> Tenho focado em desenvolvimento 
+          Full-Stack para entrega aplicações completas.
+        </h5>
+      </div>
       {/* <aside className='w-96 static right-2 py-4'>
         <div className='flex flex-col text-3xl p-2'>
           <p className='text-black'>Concorra a R$100.000,00 ou uma Fastback T200!</p> 
@@ -74,5 +85,3 @@ function Index() {
     </main>
   )
 }
-
-export default Index

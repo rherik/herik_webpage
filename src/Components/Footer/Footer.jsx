@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 export default function Footer () {
     return (
         <>
-        <div className='bg-white dark:bg-gray-900 text-gray-400 relative md:static w-86 grid p-2 
+        <div className='bg-[#F2F0EA] dark:bg-gray-900 text-gray-400 relative md:static w-86 grid p-2 
             inset-x-0 bottom-0 border-double border-2 shadow-md
             md:flex flex-col md:justify-between md:w-full'>
             
@@ -23,7 +23,7 @@ export default function Footer () {
                     </div>
                 </div>
 
-                    <div className='flex items-end pt-1 pr-0 space-x-2'>
+                    {/* <div className='flex items-end pt-1 pr-0 space-x-2'>
                         <input type="text" placeholder='Digite seu e-mail' className="flex row-span-3 p-2 bg-[#6e7975] text-gray-900 border border-gray-300 rounded-lg
                         focus:ring-green-500 focus:border-green-500 dark:border-gray-600 dark:placeholder-gray-400
                         dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500" />
@@ -34,7 +34,7 @@ export default function Footer () {
                         disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                             <p className='uppercase p-2'>Me inscrever</p>
                         </button>
-                    </div>
+                    </div> */}
             
             <div className="border-white py-4">
                 <h6 className='absolute right-4 font-bold upercase'>
