@@ -11,12 +11,10 @@
 
 &#9745; NavBar responsiva com menu de hamburguer
 
+&#9745; Ajeitar tamanho na homepage
+
+&#9744; Remover branchs desnecessárias e criar outro repositório para o projeto
+
 &#9744; Slider cards na aba Catálogo
 
 &#9744; Comprar domínio
-
-&#9744; Ajeitar tamanho na homepage
-
-&#9744; Adicionar google maps à aba *Como chegar*
-
-&#9744; Criar página *Sobre*

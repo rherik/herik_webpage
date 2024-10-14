@@ -1,8 +1,16 @@
 import React from 'react';
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { FaGithubAlt } from "react-icons/fa";
 import { FaInstagram } from 'react-icons/fa';
 import { MdEmail } from "react-icons/md";
 
 export default function Footer () {
+    let redes = [
+        {icon: <FaInstagram />, link: 'https://www.instagram.com/_hliki/'},
+        {icon: <FaGithubAlt />, link: 'https://www.github.com/rherik'},
+        {icon: <AiOutlineLinkedin />, link: 'https://www.linkedin.com/in/herik-cunha/'},
+        {icon: <MdEmail />, link: 'mailto:herikrosa@hotmail.com'}
+    ]
     return (
         <>
         <div className='bg-[#F2F0EA] dark:bg-gray-900 text-gray-400 relative md:static w-86 grid p-2 
@@ -10,18 +18,21 @@ export default function Footer () {
             md:flex flex-col md:justify-between md:w-full'>
             
             <p className='font-bold w-fit'>Rio de janeiro/RJ</p>
-                <div className='flex flex-row justify-start w-fit space-x-1'>
-                    <div className='flex flex-row'>
-                        <a href="mailto:herikrosa@hotmail.com" target='_blank' className='hover:text-white cursor-pointer'>
-                            <MdEmail className='mt-1 text-xl hover:text-[#cba042]' /></a>
-                        <p>herikrosa@hotmail.com</p>
-                    </div>
-                    <div className='w-fit text-[22px] hover:text-[#cba042] cursor-pointer'>
-                        <a href='https://www.instagram.com/studio.dalvacampos?igsh=ZDl4cDV1Z3BoenYw' target='_blank'>
-                            <FaInstagram />
-                        </a>
-                    </div>
+                <div className='flex flex-row-2 justify-start w-fit space-x-1'>
+                    {
+                        redes.map((rede)=>(
+                            <div className='w-fit text-[22px] hover:text-[#cba042] cursor-pointer'>
+                                <a href={rede.link} target='_blank'>
+                                    {rede.icon}
+                                </a>
+                            </div>
+                        ))
+                    }
                 </div>
+                <div className='flex justify-start'>
+                        <p>herikrosa@hotmail.com</p>
+                </div>
+
 
                     {/* <div className='flex items-end pt-1 pr-0 space-x-2'>
                         <input type="text" placeholder='Digite seu e-mail' className="flex row-span-3 p-2 bg-[#6e7975] text-gray-900 border border-gray-300 rounded-lg

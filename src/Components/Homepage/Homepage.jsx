@@ -18,10 +18,11 @@ export default function Homepage() {
   };
 
   return (
-    <main className='flex flex-col-1 justify-center items-center static p-2 min-h-64 md:min-h-96'>
-      <div className=''>
+    <main className='flex flex-col-1 justify-center items-center bg-[#F2F0EA] dark:bg-gray-900 min-h-64 md:min-h-96'>
+      <div className='mt-20 mb-20 ml-4 mr-4'>
           <img src={AnImagem} alt="" className='w-80 left-2 rounded-lg' />
-        <h5 className='font-semibold first-letter:text-7xl first-letter:font-bold first-letter:text-[#3b3a274f] first-letter:mr-3 pt-2'>
+        <h5 className='font-semibold first-letter:text-7xl first-letter:font-bold
+        dark:text-[#F2F0EA] first-letter:text-[#3b3a274f] first-letter:mr-3 pt-2'>
           Formado em Análise e Desenvolvimento de Sistemas <br /> pela Estácio de Sá 
           tenho especialidade com <br /> 
         </h5>
@@ -29,7 +30,8 @@ export default function Homepage() {
             Python(Flask, Django, Selenium), Banco de dados PostgreSQL e JavaScript(React).
         </p>
 
-        <h5 className='font-semibold first-letter:text-7xl first-letter:font-bold first-letter:text-[#3b3a274f] first-letter:mr-3 pt-2'>
+        <h5 className='font-semibold first-letter:text-7xl first-letter:font-bold 
+        dark:text-[#F2F0EA] first-letter:text-[#3b3a274f] first-letter:mr-3 pt-2'>
           Além de Docker e arquitetura RestAPI. <br /> Tenho focado em desenvolvimento 
           Full-Stack para entrega aplicações completas.
         </h5>
