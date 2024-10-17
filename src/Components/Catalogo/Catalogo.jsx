@@ -1,12 +1,13 @@
 import dalva from '../../assets/servicos/web_dalva.png'
 import viralatas from '../../assets/servicos/web_viralata.png'
 import yo from '../../assets/servicos/web_yo.png'
+import flask_api from '../../assets/servicos/flask_api.png'
 
 export default function Catalogo() {
     let links = [
         {titulo: "Site para o Studio Dalva Campos",
             texto: 'Freelance desenvolvido para o Studio de estética e bem estar Dalva Campos com React, Tailwind e deploy na Vercel.',
-            link: 'https://dalv-web.vercel.app/',
+            link: 'https://studiodalva.vercel.app/',
             img: dalva},
         {titulo: 
             "Site dos vira-latas.", 
@@ -20,20 +21,23 @@ export default function Catalogo() {
             link: 'https://rherik.github.io/card-component/',
             img: yo},
         {titulo: 
-            "jAPI",
-            texto: 'Desenvolvi uma API para registro de albuns de música para ser consumido no meu frontend de albuns favoritos. Aqui utilizo Java, Spring Boot e Docker.',
+            "Flask API",
+            texto: 'Desenvolvi uma API para registro de albuns de música para ser consumido no meu frontend de albuns favoritos. Aqui utilizo Flask, PostgreSQL, AWS S3 Bucket e Docker.',
             link: 'https://favs-api.onrender.com/albuns',
-            img: yo}
+            img: flask_api}
     ]
 
     return (
-        <section className='grid grid-cols-1 md:grid-cols-4 justify-center items-center bg-[#F2F0EA] dark:bg-gray-900'>
+        <section className='grid grid-cols-1 md:grid-cols-4 justify-center items-center
+         bg-[#F2F0EA] dark:bg-gray-900' id='catalogo'>
             {
                 links.map((link)=>(
-                    <div className='mt-20 mb-20 ml-24 mr-4 md:ml-6 md:mr-36 rounded-lg bg-white drop-shadow-lg 
+                    <div className='mt-20 mb-20 ml-16 md:ml-6 md:mr-36 rounded-lg bg-white drop-shadow-lg 
                     dark:bg-surface-dark w-64 md:w-72 md:h-[430px] transform transition duration-500 hover:scale-125'>
                         <a className='' 
-                        href={link.link}>
+                        href={link.link}
+                        target='_blank'
+                        >
                             <img src={link.img} alt="" className='p-4 shadow-xl rounded-2xl' />
                         </a>
                         <div className='p-6'>

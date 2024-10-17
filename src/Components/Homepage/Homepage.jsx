@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import AnImagem from '../../assets/yo.png'
+import Catalogo from '../Catalogo/Catalogo'
 
 
 export default function Homepage() {
@@ -18,7 +19,8 @@ export default function Homepage() {
   };
 
   return (
-    <main className='flex flex-col-1 justify-center items-center bg-[#F2F0EA] dark:bg-gray-900 min-h-64 md:min-h-96'>
+    <main className=''>
+      <div className='flex flex-col-1 justify-center items-center bg-[#F2F0EA] dark:bg-gray-900 min-h-64 md:min-h-96' id='home'>
       <div className='mt-20 mb-20 ml-4 mr-4'>
           <img src={AnImagem} alt="" className='w-80 left-2 rounded-lg' />
         <h5 className='font-semibold first-letter:text-7xl first-letter:font-bold
@@ -36,6 +38,7 @@ export default function Homepage() {
           Full-Stack para entrega aplicações completas.
         </h5>
       </div>
+
       {/* <aside className='w-96 static right-2 py-4'>
         <div className='flex flex-col text-3xl p-2'>
           <p className='text-black'>Concorra a R$100.000,00 ou uma Fastback T200!</p> 
@@ -84,6 +87,9 @@ export default function Homepage() {
           </button>
           </a>
       </aside> */}
+
+      </div>
+    <Catalogo />
     </main>
   )
 }
