@@ -18,17 +18,15 @@ export default function Sobre() {
   return (
     <section className='grid grid-cols-1 bg-[#F2F0EA] dark:bg-gray-900 static p-4 pb-16' id='sobre'>
       <h2 className='text-center text-4xl font-extralight p-4 mb-4 capitalize text-designColor tracking-wide'>sobre mim</h2>
-      <div className="flex justify-center space-x-24">
+      <div className="flex flex-col justify-center space-x-24 md:flex-row">
         {/* Div da imagem */}
-        <div className=''>
           <ImageSlider imgs_url={imgs} />
-        </div>
 
-        <aside className='w-72 static py-4 space-y-4'>
+        <div className='w-72 static py-4 space-y-4'>
           <h5 className='font-semibold first-letter:text-7xl first-letter:font-bold
             dark:text-[#F2F0EA] first-letter:text-[#3b3a274f] first-letter:mr-3 pt-2'>
               Formado em Análise e Desenvolvimento de Sistema pela Estácio de Sá 
-              tenho especialidade com
+              tenho especialidades em:
             </h5>
             <p className='text-purple-900'>
                 {text}
@@ -38,7 +36,7 @@ export default function Sobre() {
               Além de Docker e arquitetura RestAPI. Tenho focado em desenvolvimento 
               Full-Stack para entrega aplicações completas.
             </h5>
-        </aside>
+        </div>
       </div>
     </section>
   )
