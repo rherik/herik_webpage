@@ -10,7 +10,9 @@ export default function Navbar () {
     {name: 'Home', link: 'home', id: 'home', internal: true},
     {name: 'Entre em contato', link: 'https://wa.me/5521982952515', target: '_blank', internal: false},
     {name: 'Meus trabalhos', link: 'catalogo', id:'catalogo', internal: true},
-    {name: 'Currículo', link: resume, target: '_blank', type: 'application/pdf', rel: 'noopener noreferrer', internal: false},
+    {name: 'Currículo', link: resume, target: '_blank', 
+      type: 'application/pdf', rel: 'noopener noreferrer', internal: false},
+    {name: 'Sobre', link: 'sobre', id: 'sobre', internal: true}
   ];
   const [open, setOpen] = useState(false);
   const handleButton = () => {

@@ -13,10 +13,14 @@
 
 &#9745; Ajeitar tamanho na homepage
 
-&#9744; Remover branchs desnecessárias e criar outro repositório para o projeto
+&#9745; Remover branchs desnecessárias e criar outro repositório para o projeto
 
-&#9744; Aba Sobre com mais imagens minhas
+&#9745; Aba Sobre com mais imagens minhas(slider)
 
-&#9744; Slider cards na aba Catálogo
+&#9744; Alterar Entrar em contato na navbar para um ícone de whatsapp flutuante e absoluto
+
+&#9744; Parallax effect aos cards
+
+&#9744; Reduzir tamanho do footer
 
 &#9744; Comprar domínio

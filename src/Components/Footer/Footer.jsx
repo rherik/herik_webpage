@@ -14,8 +14,7 @@ export default function Footer () {
     return (
         <>
         <div className='bg-[#F2F0EA] dark:bg-gray-900 text-gray-400 relative md:static w-86 grid p-2 
-            inset-x-0 bottom-0 border-double border-2 shadow-md
-            md:flex flex-col md:justify-between md:w-full'>
+            inset-x-0 bottom-0 border-double border-2 shadow-md md:flex flex-col md:justify-between md:w-full'>
             
             <p className='font-bold w-fit'>Rio de janeiro/RJ</p>
                 <div className='flex flex-row-2 justify-start w-fit space-x-1'>
