@@ -17,11 +17,12 @@ export default function ImageSlider({ imgs_url }) {
         })
     }
     return (
-        <div>
-            <img src={imgs_url[currentIndex]} alt="" className="w-[390px] h-[450px] rounded-3xl shadow-2xl" />
-            <div className='block relative space-x-[22rem] md:absolute'>
-                <button className='' onClick={showPrev}><FaArrowLeft /></button>
-                <button className='' onClick={showNext}><FaArrowRight /></button>
+        <div className='flex items-center md:w-[600] relative' >
+            <img src={imgs_url[currentIndex]} alt="" 
+            className="w-[405px] h-[420px] rounded-3xl shadow-2xl relative" />
+            <div className='flex flex-row'>
+                <button className='absolute inline-block left-1 text-yellow-100 w-[1rem] hover:bg-[#0000008a]' onClick={showPrev}><FaArrowLeft /></button>
+                <button className='absolute inline-block right-1 text-yellow-100 w-[1rem] hover:bg-[#0000008a]' onClick={showNext}><FaArrowRight /></button>
             </div>
         </div>
     )

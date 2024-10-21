@@ -8,7 +8,6 @@ import { Link } from 'react-scroll'
 export default function Navbar () {
   let links = [
     {name: 'Home', link: 'home', id: 'home', internal: true},
-    {name: 'Entre em contato', link: 'https://wa.me/5521982952515', target: '_blank', internal: false},
     {name: 'Meus trabalhos', link: 'catalogo', id:'catalogo', internal: true},
     {name: 'Currículo', link: resume, target: '_blank', 
       type: 'application/pdf', rel: 'noopener noreferrer', internal: false},
@@ -32,9 +31,9 @@ export default function Navbar () {
             className='text-2xl absolute transition-transform duration-700 right-8 top cursor-pointer md:hidden'>
               {open ? <HiMiniXMark />: <HiMiniBars3 />}
             </div>
-            <ul className={`bg-[#F2F0EA] dark:bg-gray-900 pb-12 absolute z-[-1] right-0 w-fit rounded-md mr-1 
-            transition-colors duration-500 ease-in ${open ? 'top-20': 'right-[-490px]'}
-              md:static md:flex md:items-center md:pb-0 md:z-auto md:w-auto md:pl-0`}>
+            <ul className={`bg-[#F2F0EA] dark:bg-gray-900 pb-12 absolute right-0 pl-2 w-full h-[340px] rounded-md 
+            transition-colors duration-800 ease-in ${open ? 'top-20': 'top-[-490px]'}
+              md:static md:flex md:items-center md:pb-0 md:w-fit md:h-fit md:pr-0`}>
               {
               links.map((link)=>(
                 <li className='md:ml-8 md:my-0 my-7' key={link.id}>

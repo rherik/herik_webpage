@@ -21,6 +21,8 @@
 
 &#9744; Parallax effect aos cards
 
+&#9744; By me a coffee
+
 &#9744; Reduzir tamanho do footer
 
 &#9744; Comprar domínio
