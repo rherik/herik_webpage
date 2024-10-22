@@ -1,7 +1,7 @@
 import dalva from '../../assets/servicos/web_dalva.png'
 import viralatas from '../../assets/servicos/web_viralata.png'
 import yo from '../../assets/servicos/web_yo.png'
-import flask_api from '../../assets/servicos/flask_api.png'
+import flask_api from '../../assets/servicos/swaggerFlaskApi.png'
 
 export default function Catalogo() {
     let links = [
@@ -23,7 +23,7 @@ export default function Catalogo() {
         {titulo: 
             "Flask API",
             texto: 'Desenvolvi uma API para registro de albuns de música para ser consumido no meu frontend de albuns favoritos. Aqui utilizo Flask, PostgreSQL, AWS S3 Bucket e Docker.',
-            link: 'https://favs-api.onrender.com/albuns',
+            link: 'https://favs-api.onrender.com/swagger-ui',
             img: flask_api}
     ]
 
