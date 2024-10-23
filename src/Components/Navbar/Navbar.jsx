@@ -49,6 +49,7 @@ export default function Navbar () {
                     smooth={true}
                     offset={-70}
                     duration={500}
+                    onClick={handleButton}
                     >
                       {link.name}
                     </Link>
@@ -58,6 +59,7 @@ export default function Navbar () {
                     target={link.target}
                     type={link.type}
                     rel={link.rel}
+                    onClick={handleButton}
                     >
                       {link.name}
                     </a>
