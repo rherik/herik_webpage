@@ -34,9 +34,10 @@ export default function Homepage() {
       phoneNumber='5521982952515' 
       accountName='Herik'
       chatMessage='Olá, Como posso te ajudar?'
-      allowClickAway
       statusMessage='Resposta em até uma hora'
-      notificationSound
+      placeholder='Gostaria de um orçamento de um site.'
+      allowClickAway
+      notificationSound={true}
       avatar={me1}
       />
     <Catalogo />
