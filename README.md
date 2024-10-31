@@ -17,7 +17,7 @@
 
 &#9745; Aba Sobre com mais imagens minhas(slider)
 
-&#9744; Alterar Entrar em contato na navbar para um ícone de whatsapp flutuante e absoluto
+&#9745; Alterar Entrar em contato na navbar para um ícone de whatsapp flutuante e absoluto
 
 &#9744; Parallax effect aos cards
 
