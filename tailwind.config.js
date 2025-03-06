@@ -5,8 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",
-    theme: {
-    extend: {},
+  theme: {
+    extend: {
+      fontFamily:{
+        title: ["Lora", "sans-serif"],
+      }
+    },
   },
   plugins: [],
 }

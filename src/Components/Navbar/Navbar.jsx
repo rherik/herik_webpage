@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { HiMiniBars3, HiMiniXMark } from 'react-icons/hi2'
-import logo from "../../assets/d_logo.png"
+import logo from "../../assets/hliki1.png"
 import Toggle from "../Toggle/Toggle"
 import resume from '../../assets/resume.pdf'
 import { Link } from 'react-scroll'

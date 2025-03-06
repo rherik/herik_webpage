@@ -3,7 +3,7 @@ import me1 from '../../assets/servicos/me1.png'
 import me2 from '../../assets/servicos/me2.png'
 import me3 from '../../assets/yo.png'
 import ImageSlider from '../Slider/ImageSlider'
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useTypewriter } from "react-simple-typewriter";
 
 export default function Sobre() {
   const imgs = [me1, me2, me3]
@@ -13,7 +13,6 @@ export default function Sobre() {
     typeSpeed: 20,
     deleteSpeed: 30,
     delaySpeed: 2000,
-    
   });
 
   return (
