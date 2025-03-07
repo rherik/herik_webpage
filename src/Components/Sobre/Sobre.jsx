@@ -3,11 +3,12 @@ import me1 from '../../assets/servicos/me1.jpg'
 import me2 from '../../assets/servicos/me2.jpg'
 import me3 from '../../assets/servicos/me3.jpg'
 import me4 from '../../assets/servicos/me4.jpg'
+import me5 from '../../assets/servicos/me5.jpg'
 import ImageSlider from '../Slider/ImageSlider'
 import { useTypewriter } from "react-simple-typewriter";
 
 export default function Sobre() {
-  const imgs = [me1, me2, me3, me4]
+  const imgs = [me1, me2, me3, me4, me5]
   const [text] = useTypewriter({
     words: ["Python(Flask, Django, Selenium, Beautiful Soup),", "Banco de dados(PostgreSQL)", "e JavaScript(React)."],
     loop: true,

@@ -1,7 +1,7 @@
 import { useLayoutEffect } from 'react'
 import Catalogo from '../Catalogo/Catalogo'
 import Sobre from '../Sobre/Sobre'
-import me1 from "../../assets/servicos/me1.jpg"
+import eu from '../../assets/hliki1.png'
 import hliki1 from '../../assets/hliki1.png'
 import hliki2 from '../../assets/hliki2.jpg'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
@@ -55,13 +55,13 @@ export default function Homepage() {
           Com o intuito de tornar o conhecimento que adquiri acessivel para mais pessoas, aqui aplico e exercito meus conhecimentos e exponho alguns dos meus projetos. A Hliki foi feita para que outras pessoas possam acessar, interagir e compartilhar o meu trabalho e experiências, além de facilitar o contato para solicitação de serviços. Nesta plataforma é onde divulgo meu empreendimento, onde compartilho meus conhecimentos e onde você pode encontrar atualizações sobre meus trabalhos e entrar em contato para solicitar algum serviço.
           </p>
 
-          <div className='flex md:flex-row flex-col justify-around pt-20 space-y-3' id='divImage'> 
-            <img src={imgs[0]} alt="" className='w-64 rounded-md translate-x-[-600px] opacity-0' id='img1' />
-            <img src={imgs[1]} alt="" className='w-64 rounded-md translate-x-[600px] opacity-0' id='img2' />
+          <div className='flex md:flex-row flex-col justify-around items-center pt-20 space-y-3 transition-transform ease-in-out' id='divImage'> 
+            <img src={imgs[0]} alt="" className='w-64 rounded-md md:translate-x-[-500px] opacity-0' id='img1' />
+            <img src={imgs[1]} alt="" className='w-64 rounded-md md:translate-x-[500px] opacity-0' id='img2' />
           </div>
 
           <p className='md:pl-40 font-[title] first-letter:text-7xl first-letter:font-bold text-2xl
-            dark:text-[#F2F0EA] first-letter:text-[#3b3a274f] dark:first-letter:text-[#F2F0EA] pt-2'>
+            dark:text-[#F2F0EA] first-letter:text-[#3b3a274f] dark:first-letter:text-[#F2F0EA] pt-24'>
               Abaixo você pode encontrar alguns dos serviços que já fiz.
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function Homepage() {
       placeholder='Gostaria de um orçamento de um site.'
       allowClickAway
       notificationSound={true}
-      avatar={me1}
+      avatar={eu}
       />
     <Catalogo />
     <Sobre />

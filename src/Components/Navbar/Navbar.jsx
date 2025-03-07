@@ -18,7 +18,6 @@ export default function Navbar () {
     setOpen(open => !open)
   }
   return (
-    <div>
         <nav className="header fixed top-0 left-0 w-full px-10 py-4 bg-[#F2F0EA] dark:bg-gray-900 
         flex items-center justify-between z-[100] shadow-md">
             <div className='w-55 h-16'>
@@ -72,6 +71,5 @@ export default function Navbar () {
             </div>
             </ul>
         </nav>
-    </div> 
   )
 }

@@ -37,7 +37,7 @@ export default function Catalogo() {
          bg-[#F2F0EA] dark:bg-gray-900' id='catalogo'>
             {
                 links.map((link)=>(
-                    <div className='mt-20 mb-20 ml-16 md:ml-6 md:mr-36 rounded-lg bg-white drop-shadow-lg 
+                    <div className='mt-20 mb-20 md:ml-10 md:mr-36 rounded-lg bg-white drop-shadow-lg 
                     dark:bg-surface-dark w-64 md:w-72 md:h-[430px]'>
                         <a className='' 
                         href={link.link_prog}
