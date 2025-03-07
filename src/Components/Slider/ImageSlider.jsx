@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
 
 export default function ImageSlider({ imgs_url }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,14 +17,15 @@ export default function ImageSlider({ imgs_url }) {
         })
     }
     return (
-        <div className='flex items-center relative'>
+        <div className='flex items-center relative overflow-hidden transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 drop-shadow-2xl'>
             <img src={imgs_url[currentIndex]} alt="" 
-            className="w-[405px] h-[420px] rounded-3xl shadow-2xl" />
+            className="w-[420px] h-[460px] rounded-3xl shadow-2xl" />
+            <p class="absolute px-4 text-lg bottom-6 text-white">Palestra sobre carreira em TI no C.E. Charles Dickens.</p>
             <div className='flex flex-row'>
-                <button className='absolute left-1 top-5 text-yellow-100 h-96 rounded-lg hover:bg-[#0000008a]' onClick={showPrev}>
-                    <FaArrowLeft /></button>
-                <button className='absolute right-1 top-5 text-yellow-100 h-96 rounded-lg hover:bg-[#0000008a]' onClick={showNext}>
-                    <FaArrowRight /></button>
+                <button className='absolute left-1 text-gray-800 h-7 w-5 justify-center rounded-xl bg-gray-200 hover:bg-white duration-300 ease-in-out' onClick={showPrev}>
+                    <SlArrowLeft /></button>
+                <button className='absolute right-1 text-gray-800 h-7 w-5 rounded-xl bg-gray-200 hover:bg-white duration-300 ease-in-out' onClick={showNext}>
+                    <SlArrowRight /></button>
             </div>
         </div>
     )
