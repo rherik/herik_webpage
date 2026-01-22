@@ -12,10 +12,10 @@ export default function Catalogo() {
             link_rep: 'https://github.com/rherik/studiodalva',
             img: dalva},
         {titulo: 
-            "Site dos vira-latas.", 
+            "Site dos vira-latas(Em manutenção, mas você pode acessar o repositório do projeto).", 
             texto: `Este é o projeto pelo qual tenho mais apreço. Nele desenvolvi uma página web utilizando Flask, Postgresql, S3 AWS.
             Este é um projeto que vou refazer do zero para separar o frontend do backend consumindo uma api python com uma página react.`,
-            link_prog: 'https://siteflask-110i.onrender.com/',
+            link_prog: '#',
             link_rep: 'https://github.com/rherik/adocao_flask',
             img: viralatas},
         {titulo: 
@@ -25,20 +25,20 @@ export default function Catalogo() {
             link_rep: 'https://github.com/rherik/card-component',
             img: yo},
         {titulo: 
-            "Flask API",
+            "Flask API(Em manutenção, mas você pode acessar o repositório do projeto)",
             texto: 'Desenvolvi uma API para registro de albuns de música para ser consumido no meu frontend de albuns favoritos. Aqui utilizo Flask, PostgreSQL, AWS S3 Bucket e Docker.',
-            link_prog: 'https://favs-api.onrender.com/swagger-ui',
+            link_prog: '#',
             link_rep: 'https://github.com/rherik/favs-api',
             img: flask_api}
     ]
 
     return (
-        <section className='grid grid-cols-1 md:grid-cols-4 justify-center items-center
-         bg-[#F2F0EA] dark:bg-gray-900' id='catalogo'>
+        <section className='grid grid-cols-1 md:grid-cols-4 justify-center items-start
+         bg-[#F2F0EA] dark:bg-slate-900' id='catalogo'>
             {
                 links.map((link)=>(
                     <div className='mt-20 mb-20 md:ml-10 md:mr-36 rounded-lg bg-white drop-shadow-lg 
-                    dark:bg-surface-dark w-64 md:w-72 md:h-[430px]'>
+                    dark:bg-surface-dark w-64 md:w-72 md:h-fit'>
                         <a className='' 
                         href={link.link_prog}
                         target='_blank'

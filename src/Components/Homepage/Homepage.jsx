@@ -42,7 +42,7 @@ export default function Homepage() {
    })
 
   return (
-    <main className='flex flex-col items-center bg-[#F2F0EA] dark:bg-gray-900' id='home'>
+    <main className='flex flex-col items-center bg-[#F2F0EA] dark:bg-slate-900' id='home'>
       
         <div className='w-72 md:w-[980px] pt-20 md:pl-8'>
           <p className='text-center pb-8 font-semibold first-letter:text-7xl first-letter:font-bold text-2xl
