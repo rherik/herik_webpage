@@ -1,4 +1,3 @@
-import React from 'react'
 import me1 from '../../assets/servicos/me1.jpg'
 import me2 from '../../assets/servicos/me2.jpg'
 import me3 from '../../assets/servicos/me3.jpg'
