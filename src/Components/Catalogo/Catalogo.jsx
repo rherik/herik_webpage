@@ -2,35 +2,47 @@ import dalva from '../../assets/servicos/web_dalva.png'
 import viralatas from '../../assets/servicos/web_viralata.png'
 import yo from '../../assets/servicos/web_yo.png'
 import flask_api from '../../assets/servicos/swaggerFlaskApi.png'
+import samba_app from '../../assets/servicos/samba-app.png'
 import { BsGithub } from "react-icons/bs"
 
 export default function Catalogo() {
     let links = [
-        {titulo: "Site para o Studio Dalva Campos",
+        {
+            titulo: "Site para o Studio Dalva Campos",
             texto: 'Freelance desenvolvido para o Studio de estética e bem estar Dalva Campos com React, Tailwind e deploy na Vercel.',
             link_prog: 'https://studiodalva.vercel.app/',
             link_rep: 'https://github.com/rherik/studiodalva',
-            img: dalva},
-        {titulo: 
-            "Site dos vira-latas(Em manutenção, mas você pode acessar o repositório do projeto).", 
-            texto: `Este é o projeto pelo qual tenho mais apreço. Nele desenvolvi uma página web utilizando Flask, Postgresql, S3 AWS.
-            Este é um projeto que vou refazer do zero para separar o frontend do backend consumindo uma api python com uma página react.`,
+            img: dalva
+        },
+        {
+            titulo: "Site dos vira-latas(Em manutenção, mas você pode acessar o repositório do projeto).",
+            texto: 'Este é o projeto pelo qual tenho mais apreço. Nele desenvolvi uma página web utilizando Flask, Postgresql, S3 AWS. Este é um projeto que vou refazer do zero para separar o frontend do backend consumindo uma api python com uma página react.',
             link_prog: '#',
             link_rep: 'https://github.com/rherik/adocao_flask',
-            img: viralatas},
-        {titulo: 
-            "Agregador de links",
+            img: viralatas
+        },
+        {
+            titulo: "Agregador de links",
             texto: 'Neste desenvolvi uma página web utilizando React, Tailwind e deploy no github pages.',
             link_prog: 'https://rherik.github.io/card-component/',
             link_rep: 'https://github.com/rherik/card-component',
-            img: yo},
-        {titulo: 
-            "Flask API(Em manutenção, mas você pode acessar o repositório do projeto)",
+            img: yo
+        },
+        {
+            titulo: "Flask API(Em manutenção, mas você pode acessar o repositório do projeto)",
             texto: 'Desenvolvi uma API para registro de albuns de música para ser consumido no meu frontend de albuns favoritos. Aqui utilizo Flask, PostgreSQL, AWS S3 Bucket e Docker.',
             link_prog: '#',
             link_rep: 'https://github.com/rherik/favs-api',
-            img: flask_api}
-    ]
+            img: flask_api
+        },
+        {
+            titulo: "Samba App - Jogo de Trivia sobre Escolas de Samba",
+            texto: 'Jogo interativo de trivia para testar seus conhecimentos sobre as escolas de samba do Rio de Janeiro. Desenvolvido com React, Vite e Tailwind CSS, deployado no GitHub Pages.',
+            link_prog: 'https://rherik.github.io/samba-app/',
+            link_rep: 'https://github.com/rherik/samba-app',
+            img: samba_app
+        }
+    ];
 
     return (
         <section className='grid grid-cols-1 md:grid-cols-4 justify-center items-start
