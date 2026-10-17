@@ -4,6 +4,7 @@ import portrait from '../../assets/servicos/me1.jpg'
 import studioDalva from '../../assets/servicos/web_dalva.png'
 import viraLata from '../../assets/servicos/web_viralata.png'
 import favsApi from '../../assets/servicos/swaggerFlaskApi.png'
+import sambaApp from '../../assets/servicos/samba-app.png'
 import resume from '../../assets/resume.pdf'
 
 const career = [
@@ -48,6 +49,12 @@ const projects = [
     description: 'API para cadastro de álbuns, pensada para alimentar uma aplicação de favoritos. Inclui persistência relacional e armazenamento de arquivos.',
     image: favsApi, live: '', repo: 'https://github.com/rherik/favs-api',
     stack: ['Flask', 'PostgreSQL', 'Docker', 'AWS S3'],
+  },
+  {
+    number: '04', title: 'Samba App', category: 'PROJETO FRONT-END · GITHUB PAGES',
+    description: 'Jogo de trivia interativo sobre escolas de samba, desenvolvido com React e Vite. Projeto publicado no GitHub Pages.',
+    image: sambaApp, imageTone: 'project-image--samba', live: 'https://rherik.github.io/samba-app/', repo: 'https://github.com/rherik/samba-app',
+    stack: ['React', 'Vite', 'React Router', 'GitHub Pages'],
   },
 ]
 
@@ -160,7 +167,7 @@ export default function Homepage() {
         <div className="project-grid">
           {projects.map((project) => (
             <article className="project-card" key={project.number}>
-              <a className="project-image" href={project.live || project.repo} target="_blank" rel="noreferrer" aria-label={`Abrir ${project.title}`}>
+              <a className={`project-image ${project.imageTone || ''}`} href={project.live || project.repo} target="_blank" rel="noreferrer" aria-label={`Abrir ${project.title}`}>
                 <img src={project.image} alt={`Imagem do projeto ${project.title}`} loading="lazy" />
                 <span className="project-number">{project.number}</span><span className="project-open"><FiArrowUpRight /></span>
               </a>
@@ -170,6 +177,24 @@ export default function Homepage() {
               </div>
             </article>
           ))}
+        </div>
+        <div className="project-video">
+          <div className="project-video__copy">
+            <p className="eyebrow">DEMONSTRAÇÃO TÉCNICA · LINUX</p>
+            <h3>Arquivo executável Linux</h3>
+            <p>Uma demonstração prática compartilhada em vídeo — iniciativa para explorar uma solução e comunicar o conhecimento técnico com clareza.</p>
+            <a className="project-video__link" href="https://youtu.be/QjjAMzlskA4?is=jwTE5sqK753GXIli" target="_blank" rel="noreferrer">Assistir no YouTube <FiArrowUpRight /></a>
+          </div>
+          <div className="project-video__frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/QjjAMzlskA4?rel=0"
+              title="Arquivo executável Linux — vídeo de Herik Cunha"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
         </div>
       </section>
 

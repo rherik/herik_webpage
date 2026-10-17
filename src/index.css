@@ -109,6 +109,15 @@ h1,h2,h3,p { margin-top: 0; }
 .project-image { display: block; position: relative; height: 220px; overflow: hidden; background: #252627; }
 .project-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
 .project-card:hover .project-image img { transform: scale(1.045); }
+.project-image--samba { background: var(--acid); }
+.project-image--samba img { object-fit: contain; padding: 20px; }
+.project-video { display: grid; grid-template-columns: .7fr 1.3fr; align-items: center; gap: clamp(24px, 5vw, 72px); margin-top: 54px; padding: clamp(24px, 4vw, 52px); border: 1px solid var(--line); background: #171819; }
+.project-video__copy .eyebrow { font-size: 9px; }
+.project-video__copy h3 { margin: 15px 0; font-size: clamp(30px, 3.2vw, 42px); font-weight: 500; }
+.project-video__copy > p:not(.eyebrow) { max-width: 390px; color: #aaa9a4; font-size: 13px; line-height: 1.8; }
+.project-video__link { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; color: var(--acid); font-size: 12px; }
+.project-video__frame { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #252627; }
+.project-video__frame iframe { display: block; width: 100%; height: 100%; border: 0; }
 .project-number,.project-open { position: absolute; top: 13px; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; color: var(--ink); background: var(--paper); font: 10px var(--mono); }
 .project-number { left: 13px; }
 .project-open { right: 13px; font-size: 15px; }
@@ -146,6 +155,7 @@ h1,h2,h3,p { margin-top: 0; }
   .skills-layout { grid-template-columns: .7fr 1.3fr; gap: 5vw; }
   .skill-group { grid-template-columns: 145px 1fr; }
   .project-grid { grid-template-columns: repeat(2,1fr); }
+  .project-video { grid-template-columns: 1fr; }
   .about-section { grid-template-columns: 120px 1fr 80px; }
   .about-orbit .cd-disc { right: -180px; }
 }
@@ -188,6 +198,8 @@ h1,h2,h3,p { margin-top: 0; }
   .project-grid { grid-template-columns: 1fr; }
   .project-image { height: 210px; }
   .project-info > p:not(.eyebrow) { min-height: 0; }
+  .project-video { margin-top: 38px; padding: 22px; gap: 24px; }
+  .project-video__copy h3 { font-size: 30px; }
   .about-section { min-height: 0; grid-template-columns: 1fr; gap: 24px; padding-top: 70px; padding-bottom: 80px; }
   .about-orbit { position: absolute; width: 170px; height: 170px; right: -40px; top: 80px; opacity: .24; }
   .about-orbit .cd-disc { width: 210px; right: 0; top: 0; }
