@@ -12,8 +12,8 @@ const career = [
     period: 'ABR 2025 — ATUAL',
     role: 'Analista de Desenvolvimento Jr.',
     company: 'Digimap · imagens de satélite e mapeamentos',
-    detail: 'Atuo no desenvolvimento de soluções para a Digimap, com destaque para um bot de licitações que usa IA para filtrar resultados e permite agendar tarefas, além de uma plataforma de gestão de haras. Também trabalho com plataformas web de geoprocessamento e ferramentas para geração e pesquisa de imagens georreferenciadas, usando Flask, Leaflet, jQuery e AWS EC2.',
-    tags: ['IA aplicada', 'Automação', 'Agendamento de tarefas', 'Flask', 'Leaflet', 'AWS EC2'],
+    detail: 'Na Digimap, desenvolvo soluções para apoiar operações técnicas e comerciais. Um dos destaques é um bot de licitações que integra dados de apis públicas e privadas, combina pré-filtros determinísticos de escopo com classificação por IA — atende, atende parcialmente ou não atende — e registra justificativas. O fluxo deduplica oportunidades, grava novos resultados no PostgreSQL e envia relatórios CSV por e-mail. A pipeline Jenkins tem agendamento semanal e executa testes automatizados antes do bot. Também contribuo para uma plataforma de gestão de haras e soluções web de geoprocessamento.',
+    tags: ['Python', 'IA aplicada', 'Consumo de APIs', 'PostgreSQL', 'Jenkins', 'Geoprocessamento'],
   },
   {
     period: 'AGO 2022 — DEZ 2023',
