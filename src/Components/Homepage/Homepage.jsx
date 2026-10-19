@@ -12,8 +12,8 @@ const career = [
     period: 'ABR 2025 — ATUAL',
     role: 'Analista de Desenvolvimento Jr.',
     company: 'Digimap · imagens de satélite e mapeamentos',
-    detail: 'Desenvolvimento de plataformas web full-stack para geoprocessamento e ferramentas de geração e pesquisa de imagens georreferenciadas. Trabalho com Flask, Leaflet, jQuery e instâncias AWS EC2.',
-    tags: ['Flask', 'Geoprocessamento', 'Leaflet', 'AWS EC2'],
+    detail: 'Atuo no desenvolvimento de soluções para a Digimap, com destaque para um bot de licitações que usa IA para filtrar resultados e permite agendar tarefas, além de uma plataforma de gestão de haras. Também trabalho com plataformas web de geoprocessamento e ferramentas para geração e pesquisa de imagens georreferenciadas, usando Flask, Leaflet, jQuery e AWS EC2.',
+    tags: ['IA aplicada', 'Automação', 'Agendamento de tarefas', 'Flask', 'Leaflet', 'AWS EC2'],
   },
   {
     period: 'AGO 2022 — DEZ 2023',
